@@ -1,3 +1,3 @@
 Aplikacja wirutalnej uczelni.
 
-Informacje znajduja się w dokumentacji oraz instrukcji obsługi.
+Informacje znajdują się w dokumentacji oraz instrukcji obsługi.
