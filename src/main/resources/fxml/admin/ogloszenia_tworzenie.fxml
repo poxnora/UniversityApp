@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.admin.OgloszeniaTworzenieController">
+   <children>
+      <VBox id="menu" alignment="TOP_CENTER" prefHeight="720.0" prefWidth="320.0" style="-fx-background-color: #BF2554;">
+         <children>
+            <Pane prefHeight="113.0" prefWidth="320.0">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="BOOKMARK" layoutX="46.0" layoutY="86.0" size="85" text="" />
+                  <Text fill="WHITE" layoutX="121.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WIRTUALNA ">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="128.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UCZELNIA">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Pane>
+            <Button fx:id="b_ogloszenia" layoutX="63.0" layoutY="66.0" mnemonicParsing="false" onAction="#ogloszenia" prefHeight="45.0" prefWidth="278.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50px;" text="OGŁOSZENIA" textFill="#bf2554">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font></Button>
+            <Button fx:id="b_uzytkownicy" layoutX="63.0" layoutY="66.0" mnemonicParsing="false" onAction="#uzytkownicy" prefHeight="45.0" prefWidth="278.0" style="-fx-background-color: #f01a5c; -fx-background-radius: 50px; -fx-border-color: #FFFFFF; -fx-border-width: 3px 3px 3px 3px; -fx-border-radius: 50px;" text="UŻYTKOWNICY" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font></Button>
+            <Button fx:id="b_zajecia" layoutX="63.0" layoutY="245.0" mnemonicParsing="false" onAction="#zajecia" prefHeight="45.0" prefWidth="278.0" style="-fx-background-color: #f01a5c; -fx-border-color: #FFFFFF; -fx-background-radius: 50px; -fx-border-width: 3px 3px 3px 3px; -fx-border-radius: 50px;" text="ZAJĘCIA" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font></Button>
+            <Button fx:id="b_kierunki" layoutX="63.0" layoutY="66.0" mnemonicParsing="false" onAction="#kierunki" prefHeight="45.0" prefWidth="278.0" style="-fx-background-color: #f01a5c; -fx-border-color: #FFFFFF; -fx-background-radius: 50px; -fx-border-width: 3px 3px 3px 3px; -fx-border-radius: 50px;" text="KIERUNKI" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font></Button>
+            <Button fx:id="b_przedmioty" layoutX="63.0" layoutY="66.0" mnemonicParsing="false" onAction="#przedmioty" prefHeight="45.0" prefWidth="278.0" style="-fx-background-color: #f01a5c; -fx-border-color: #FFFFFF; -fx-background-radius: 50px; -fx-border-width: 3px 3px 3px 3px; -fx-border-radius: 50px;" text="PRZEDMIOTY" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font></Button>
+            <Button fx:id="b_ankiety" layoutX="63.0" layoutY="245.0" mnemonicParsing="false" onAction="#ankiety" prefHeight="45.0" prefWidth="278.0" style="-fx-background-color: #f01a5c; -fx-border-color: #FFFFFF; -fx-background-radius: 50px; -fx-border-width: 3px 3px 3px 3px; -fx-border-radius: 50px;" text="ANKIETY" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font></Button>
+            <Button fx:id="b_profil" layoutX="63.0" layoutY="245.0" mnemonicParsing="false" onAction="#profil" prefHeight="45.0" prefWidth="278.0" style="-fx-background-color: #f01a5c; -fx-border-color: #FFFFFF; -fx-background-radius: 50px; -fx-border-width: 3px 3px 3px 3px; -fx-border-radius: 50px;" text="PROFIL" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font></Button>
+            <Button fx:id="b_wyloguj" layoutX="63.0" layoutY="245.0" mnemonicParsing="false" onAction="#wyloguj" prefHeight="45.0" prefWidth="278.0" style="-fx-background-color: #f01a5c; -fx-border-color: #FFFFFF; -fx-background-radius: 50px; -fx-border-width: 3px 3px 3px 3px; -fx-border-radius: 50px;" text="WYLOGUJ" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="80.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font></Button>
+         </children>
+      </VBox>
+   <VBox layoutX="320.0" prefHeight="720.0" prefWidth="960.0" AnchorPane.rightAnchor="0.0">
+   <children>
+
+      <HBox layoutX="320.0" prefHeight="59.0" prefWidth="960.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Pane layoutX="320.0" prefHeight="59.0" prefWidth="239.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 0px 5px 0px 5px; -fx-background-color: #BF2554;">
+               <children>
+                  <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="13.0" prefHeight="33.0" prefWidth="209.0" text="ADMINISTRATOR" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="559.0" prefHeight="59.0" prefWidth="721.0" style="-fx-border-color: #BF2554; -fx-border-width: 5px 5px 5px 5px; -fx-background-color: #FFFFFF;">
+               <children>
+                  <Button layoutX="671.0" layoutY="13.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: transparent;" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView fill="#bf2554" glyphName="CLOSE" size="25" />
+                     </graphic>
+                  </Button>
+                  <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="162.0" text="Zalogowany jako:">
+                     <font>
+                        <Font name="Berlin Sans FB" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email1" layoutX="195.0" layoutY="7.0" prefHeight="40.0" prefWidth="441.0" text="abc" textFill="#bf2554">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="59.0" prefWidth="960.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="TOP_LEFT" prefHeight="42.0" prefWidth="336.0" text="Tworzenie ogłoszenia dla:">
+               <font>
+                  <Font name="Berlin Sans FB" size="31.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+               <HBox.margin>
+                  <Insets left="-90.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox fx:id="select1" onAction="#selectFor" prefHeight="36.0" prefWidth="209.0" promptText="Dla wszystkich" style="-fx-background-color: #FFFFFF; -fx-border-color: #BF2554; -fx-border-width: 3px 3px 3px 3px;">
+               <HBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </HBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="select2" onAction="#selectKierunki" prefHeight="36.0" prefWidth="207.0" promptText="Kierunki" style="-fx-background-color: #FFFFFF; -fx-border-color: #BF2554; -fx-border-width: 3px 3px 3px 3px;">
+               <HBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+   <HBox alignment="TOP_CENTER" prefHeight="602.0" prefWidth="960.0" AnchorPane.rightAnchor="0.0">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="602.0" prefWidth="960.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox prefHeight="602.0" prefWidth="960.0">
+
+      <VBox alignment="TOP_CENTER" layoutX="320.0" prefHeight="720.0" prefWidth="960.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" text="Tytuł:">
+               <VBox.margin>
+                  <Insets left="-20.0" right="800.0" top="30.0" />
+               </VBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+            </Label>
+            <TextField fx:id="t_tytul" style="-fx-border-color: #BF2554; -fx-border-width: 3px 3px 3px 3px; -fx-background-radius: 20px; -fx-border-radius: 20px;">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextField>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="226.0" text="Treść ogłoszenia:">
+               <VBox.margin>
+                  <Insets right="750.0" top="50.0" />
+               </VBox.margin>
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+            </Label>
+            <TextArea fx:id="t_ogloszenie" prefHeight="281.0" prefWidth="860.0" style="-fx-border-color: #BF2554; -fx-border-width: 3px 3px 3px 3px; -fx-border-radius: 6px; -fx-background-radius: 20px;">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </TextArea>
+            <Button fx:id="b_dodaj_ogloszenie" layoutX="1007.0" layoutY="35.0" mnemonicParsing="false" onAction="#dodaj_ogloszenie" prefHeight="35.0" prefWidth="219.0" style="-fx-background-color: #BF2554;" text="DODAJ OGŁOSZENIE" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+                                    <VBox.margin>
+                                       <Insets top="20.0" />
+                                    </VBox.margin>
+            </Button>
+            <Label fx:id="komunikat" layoutX="120.0" layoutY="580.0" prefHeight="30.0" prefWidth="496.0" text="Label" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+                                    <VBox.margin>
+                                       <Insets top="25.0" />
+                                    </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   </HBox>
+   </children>
+
+
+   </VBox>
+   </children>
+</AnchorPane>

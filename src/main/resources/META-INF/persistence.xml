@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+  <persistence-unit name="default">
+    <class>com.example.demo.entity.AdministratorzyEntity</class>
+    <class>com.example.demo.entity.AnkietyEntity</class>
+    <class>com.example.demo.entity.KierunkiEntity</class>
+    <class>com.example.demo.entity.OdpowiedziEntity</class>
+    <class>com.example.demo.entity.OgloszeniaEntity</class>
+    <class>com.example.demo.entity.OgloszeniaKierunkiEntity</class>
+    <class>com.example.demo.entity.OgloszeniaZajeciaEntity</class>
+    <class>com.example.demo.entity.ProwadzacyEntity</class>
+    <class>com.example.demo.entity.PrzedmiotyEntity</class>
+    <class>com.example.demo.entity.PytaniaEntity</class>
+    <class>com.example.demo.entity.StudenciEntity</class>
+    <class>com.example.demo.entity.UzytkownicyEntity</class>
+    <class>com.example.demo.entity.ZajeciaEntity</class>
+    <class>com.example.demo.entity.ZaliczeniaEntity</class>
+    <class>com.example.demo.entity.ZestawOdpowiedziEntity</class>
+    <class>com.example.demo.entity.ZestawyPytanEntity</class>
+
+    <properties>
+      <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/wirtualna_uczelnia?zeroDateTimeBehavior=convertToNull"/>
+      <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="hibernate.connection.user" value="root"/>
+      <property name="hibernate.connection.password" value=""/>
+      <property name="hibernate.show_sql" value="false"/>
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDB103Dialect"/>
+    </properties>
+  </persistence-unit>
+</persistence>

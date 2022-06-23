@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="wu_pdf">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Biblioteka_pdf/wu_pdf.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

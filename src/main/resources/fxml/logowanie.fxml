@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.LogowanieController">
+    <right>
+        <AnchorPane prefHeight="720.0" prefWidth="725.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="login" layoutX="226.0" layoutY="259.0" prefHeight="67.0" prefWidth="285.0" promptText="studen@student.studia.edu.pl" style="-fx-background-color: transparent; -fx-border-color: #4169E1; -fx-border-width: 0px 0px 2px 0px;">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="Haslo" layoutX="226.0" layoutY="361.0" prefHeight="62.0" prefWidth="285.0" promptText="Hasło" style="-fx-background-color: transparent; -fx-border-color: #4169E1; -fx-border-width: 0px 0px 2px 0px;">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </PasswordField>
+                <Button layoutX="240.0" layoutY="487.0" mnemonicParsing="false" onAction="#Login" prefHeight="44.0" prefWidth="185.0" style="-fx-background-color: #4169E1;" text="ZALOGUJ" textFill="WHITE">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Button>
+                <FontAwesomeIconView fill="ROYALBLUE" glyphName="USER" layoutX="161.0" layoutY="319.0" size="40" />
+                <FontAwesomeIconView fill="ROYALBLUE" glyphName="KEY" layoutX="155.0" layoutY="417.0" size="40" text="" />
+                <Text fill="ROYALBLUE" layoutX="224.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGOWANIE">
+                    <font>
+                        <Font name="Berlin Sans FB" size="38.0" />
+                    </font>
+                </Text>
+                <Button layoutX="589.0" layoutY="7.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: transparent;" textFill="WHITE">
+                    <graphic>
+                        <FontAwesomeIconView fill="ROYALBLUE" glyphName="CLOSE" size="25" />
+                    </graphic>
+                </Button>
+                <Label fx:id="labelChangePassword" layoutX="120.0" layoutY="580.0" prefHeight="30.0" prefWidth="496.0" text="Label" visible="false">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </right>
+    <left>
+        <AnchorPane prefHeight="720.0" prefWidth="629.0" style="-fx-background-color: #4169E1;" BorderPane.alignment="CENTER">
+            <children>
+                <FontAwesomeIconView fill="WHITE" glyphName="BOOKMARK" layoutX="108.0" layoutY="397.0" size="140" text="" />
+                <Text fill="WHITE" layoutX="235.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WIRTUALNA ">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="255.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UCZELNIA">
+                    <font>
+                        <Font size="44.0" />
+                    </font>
+                </Text>
+            </children></AnchorPane>
+    </left>
+</BorderPane>
